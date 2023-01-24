@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+  body{
+    color: #08526d;
+  }
+ 
+  @media screen and (max-width: 500px){
+    .center{
+      font-size: 30px;
+    }
+  
+    .cent{
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+</style>
+
+
+<div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ml-4" href="{% url 'mainH' %}"><span>Tax</span> <span>Office</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mr-4" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+             
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'mainH' %}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact Us<span class="sr-only">(current)</span></a>
+              </li>
+              {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'dash' user.id %}">Dashboard<span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Logout <span class="sr-only">(current)</span></a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login <span class="sr-only">(current)</span></a>
+              </li>
+              {% endif %}
+        </ul>
+      </div>
+    </nav>
+
+ 
+    <!--end navbar-->
+
+
+<div class="homeNav">
+    <img class="img-fluid" alt="Responsive image" src="{% static 'img/a.jpg' %}">
+    <div class="center text-center">Accounting You Can Count On</div>
+    <div class="cent">Get started with a free consultation!</div>
+</div>
+
+<div>
+  <br><br>
+  <h1 class="text-center mt-4"><u>Tax Office</u></h1>
+  <p class="lead text-center mt-4">We are tax office located in philly,pa and we have two locations. we can help you in business needs and personal needs. We are tax office located in philly,pa and we have two locations. we can help you in business needs and personal needs. We are tax office located in philly,pa and we have two locations. we can help you in business needs and personal needs. We are tax office located in philly,pa and we have two locations. we can help you in business needs and personal needs. We are tax office located in philly,pa and we have two locations. we can help you in business needs and personal needs.<p>
+  
+    <br><br>
+    <h2 class="text-center mt-4"><u>Our Services</u></h2>
+
+
+    <div class="row">
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-lg-4 mt-4">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">File Tax</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Get the best tax return</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+  <div>
+    <h3 class="text-center mt-4"><u>Our Locations</u></h3>
+    <div class="ml-4 mt-4 mb-4 text-center map">
+      <iframe class="col-sm-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.5185200497217!2d-75.17106668432278!3d39.92978987942481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c6102a741921%3A0x751a30da94c20f3e!2sAmara%20%26%20Associates!5e0!3m2!1sen!2sus!4v1674570728408!5m2!1sen!2sus" width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+
+</div>
+<!--footer-->
+<footer class="footer text-center">
+    <p>Powered by <a href="https://www.linkedin.com/in/yousef-mankoulah-967a9913b/" target="_blank" >Yousef Mankoulah</a></p>
+  </footer>
+
+
+  <!--footer-->
+{% endblock %}
